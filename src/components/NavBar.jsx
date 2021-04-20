@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from '@reach/router';
+import StyledButton from '../styledComponents/StyledButton';
 
 class NavBar extends Component {
     state = {
@@ -11,7 +12,7 @@ class NavBar extends Component {
         return (
             <nav>
                 {categories.map(category => {
-                    return <Link to ={`/sections/?category=${category}`} key={category}><button>{category}</button></Link>
+                    return <Link to ={`/${category.toLowerCase().replace(/\s/g, "")}`} key={category}><StyledButton>{category}</StyledButton></Link>
                 })}
             </nav>
         );
