@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import Fade from "react-reveal/Fade";
+import Fade from "react-reveal/Fade";
 import Loader from "../components/Loader";
 import ErrorDisplay from "../components/ErrorDisplay";
 import StoryCard from "../components/StoryCard";
@@ -50,11 +50,13 @@ class ShoeList extends Component {
     if (isLoading) return <Loader />;
 
     return (
+      <Fade>
         <main className="storyList">
           {story.map((element) => {
             return <StoryCard {...element} key={element.name} />;
           })}
         </main>
+      </Fade>
     );
   }
 }

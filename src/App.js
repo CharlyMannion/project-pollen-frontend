@@ -1,6 +1,7 @@
 import './App.css';
 import React, { Component } from 'react';
 import { Router } from '@reach/router';
+import Fade from "react-reveal/Fade";
 import Header from './components/Header'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
@@ -13,6 +14,7 @@ class App extends Component {
 
   render() {
     return(
+      <Fade>
       <div>
         <Header />
         <NavBar />
@@ -24,6 +26,7 @@ class App extends Component {
         </Router>
         <Footer />
       </div>
+      </Fade>
     )
   }
 }

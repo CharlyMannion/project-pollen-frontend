@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Loader from "../components/Loader";
 import ErrorDisplay from "../components/ErrorDisplay";
+import Fade from "react-reveal/Fade";
 // import axios from "axios";
-// import StyledButtonTwo from "../styledComponents/StyledButtonTwo";
 
 class SingleStory extends Component {
   state = {
@@ -40,6 +40,7 @@ class SingleStory extends Component {
     if (isLoading) return <Loader />;
 
     return (
+      <Fade>
       <main className="single_page_story">
         <h2>{story_info.person}</h2>
         <p
@@ -49,6 +50,7 @@ class SingleStory extends Component {
         ></p>
         <p>{story_info.body}</p>
       </main>
+      </Fade>
     );
   }
 }

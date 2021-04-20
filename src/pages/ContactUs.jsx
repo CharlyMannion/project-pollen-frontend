@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import Fade from "react-reveal/Fade";
 
 class ContactUs extends Component {
     render() {
         return (
+          <Fade>
           <body>
             <h1> Contact Us</h1>
             <p>
@@ -14,6 +16,7 @@ class ContactUs extends Component {
               <a href="online@projectpollen.co.uk">online@projectpollen.co.uk</a>
             </p>
           </body>
+          </Fade>
         );
       }
 }

@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "@reach/router";
+import Fade from "react-reveal/Fade";
 
 const StoryCard = (props) => {
   return (
+    <Fade>
       <section className="storyCard">
         <p
           className="avatar"
@@ -17,6 +19,7 @@ const StoryCard = (props) => {
         </Link>
         <p>{props.body}</p>
       </section>
+      </Fade>
   );
 };
 
