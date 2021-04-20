@@ -6,7 +6,7 @@ import StoryCard from "../components/StoryCard";
 
 class ShoeList extends Component {
   state = {
-    story: [{person: "Mark", body: "Mark fell on hard times..."}],
+    story: [{person: "Mark", body: "Mark fell on hard times..."}, {person: "Edwin", body: "Edwin came from a broken home..."}],
     isLoading: false,
   };
 

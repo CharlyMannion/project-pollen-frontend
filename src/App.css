@@ -39,6 +39,23 @@
   color: #61dafb;
 }
 
+.story-card {
+  display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    min-height: 10vh;
+    width: 60%;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    background-color: rgb(244, 246, 247);
+    color: rgba(83, 107, 120, 1);
+}
+
+.story-card:hover {
+  opacity: 0.5;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

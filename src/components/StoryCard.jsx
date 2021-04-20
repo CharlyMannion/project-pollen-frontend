@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 const StoryCard = (props) => {
   return (
     <Fade>
-      <section className="storyCard">
+      <section className="story-card">
         <p
           className="avatar"
           src={props.avatar_url}
