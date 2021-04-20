@@ -23,6 +23,8 @@ Check out the presentation slides [here](placeholder.com)
 As a commuter, 
 so I can pass the time on my commute, 
 I want to read some interesting story content
+
+
 ```
 
 Check out our trello board [here](https://trello.com/invite/b/spCisYKz/e01fd4436839d69c60583a025ae1bd2d/homelessness-project)
@@ -43,7 +45,7 @@ git clone https://github.com/CharlyMannion/project-pollen-frontend
 ```
 * Go into the project directory:
 ```
-cd final_project
+cd project-pollen-frontend
 ```
 * Open the app in your favourite text editor to view the code (We like VSCode):
 ```
