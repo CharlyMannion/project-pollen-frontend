@@ -4,9 +4,9 @@ This is the frontend of our App for project pollen, built using React
 
 View the website [here](https://projectpollen.netlify.app/)
 
-Find the hosted back end [here](https://project-pollen.herokuapp.com/)
+Find the hosted back end [here](https://project-pollen-backend.herokuapp.com/)
 
-See our back end repository [here](https://github.com/CharlyMannion/project-pollen)
+See our back end repository [here](https://github.com/CharlyMannion/project-pollen) 
 
 Check out the presentation slides [here](placeholder.com)
 
