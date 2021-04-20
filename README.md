@@ -14,4 +14,4 @@ Check out the presentation slides [here](placeholder.com)
 
 ### Component Tree Diagram
 
-![Screenshot 2021-04-20 at 13 15 57](https://user-images.githubusercontent.com/28218869/115394310-91715c00-a1da-11eb-9675-af93144a9e66.png)
+![Screenshot 2021-04-20 at 13 19 50](https://user-images.githubusercontent.com/28218869/115394837-1fe5dd80-a1db-11eb-99c5-71cabfb8fa0b.png)
