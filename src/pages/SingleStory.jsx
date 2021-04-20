@@ -41,7 +41,7 @@ class SingleStory extends Component {
 
     return (
       <Fade>
-      <main className="single_page_story">
+      <main className="single-page-story">
         <h2>{story_info.person}</h2>
         <p
           className="avatar"

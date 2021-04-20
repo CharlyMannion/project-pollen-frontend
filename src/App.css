@@ -56,6 +56,25 @@
   opacity: 0.5;
 }
 
+.error-display {
+  width: 40vh;
+  color: red;
+  font-weight: bold;
+  background: white;
+  border: 2px dashed red;
+}
+
+.single-page-story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 98%;
+  background-color: grey;
+  border: 4px solid #ebe6e1;
+  color: rgba(253, 247, 250, 1);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
