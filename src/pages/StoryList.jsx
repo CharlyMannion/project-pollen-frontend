@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Carousel from 'react-elastic-carousel';
+
 import axios from "axios";
 import Fade from "react-reveal/Fade";
 import Loader from "../components/Loader";
@@ -50,13 +52,15 @@ class ShoeList extends Component {
     if (isLoading) return <Loader />;
 
     return (
-      <Fade>
-        <main className="storyList">
-          {stories.map((story) => {
-            return <StoryCard {...story} key={story.name} />;
-          })}
-        </main>
-      </Fade>
+        <Fade>
+          <main className="storyList">
+            <Carousel>
+            {stories.map((story) => {
+              return <StoryCard {...story} key={story.name} />;
+            })}
+            </Carousel>
+          </main>
+        </Fade>
     );
   }
 }
