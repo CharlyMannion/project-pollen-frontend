@@ -1,26 +1,17 @@
-import React, { useState, useEffect } from "react";
-import DonationContainer from "./DonationContainer";
+import React, { useState } from "react";
 import '../App.css';
+import BigSlider from "./BigSlider";
 
 
 function Slider() {
-    const [value, onChange] = useState(0);
-    useEffect(() => {
-        const element = document.querySelector(".bubble");
-        if(element) {
-            element.style.left = `${Number(value / 4)}`;
-        }
-    });
-
+    const [donation, onChange] = useState([0]);
+    const msg = () => {console.log('Current donation ' , donation);}
     return (
         <div className="donation-selection">
             <div className="donation-card-title">
                 <h2>Help us to make a difference.</h2>
             </div>
-            <DonationContainer 
-            onChange = {onChange}
-            value = {value}
-            />
+            <BigSlider msg={msg} donation={donation} onChange={onChange} />     
         </div>
     )
 }
