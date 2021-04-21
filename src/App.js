@@ -4,7 +4,7 @@ import { Router } from '@reach/router';
 import Fade from "react-reveal/Fade";
 import Header from './components/Header';
 import Footer from './components/Footer';
-import NavBar from './components/NavBar';
+import HeroSection from './components/HeroSection'
 import AboutUs from './pages/AbousUs';
 import ContactUs from './pages/ContactUs';
 import StoryList from './pages/StoryList';
@@ -18,7 +18,6 @@ class App extends Component {
       <Fade>
       <div>
         <Header />
-        <NavBar />
         <Router>
           <StoryCarousel path='/'/>
           <AboutUs path='/aboutus'/>
@@ -26,6 +25,7 @@ class App extends Component {
           <StoryList path='/stories'/>
           <SingleStory path="/story/:id" />
         </Router>
+        <HeroSection />
         <Footer />
       </div>
       </Fade>
