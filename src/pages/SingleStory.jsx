@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import Loader from "../components/Loader";
 import ErrorDisplay from "../components/ErrorDisplay";
 import Fade from "react-reveal/Fade";
+const homelessStories = require('../placeholderData/stories')
 // import axios from "axios";
 
 class SingleStory extends Component {
   state = {
-    story_info: {slug: 1, person: "Mark", body: "Mark fell on hard times..."},
-    isLoading: false,
+    story_info: {},
+    isLoading: true,
   };
 
 //   fetchStoryById = () => {
@@ -30,9 +31,14 @@ class SingleStory extends Component {
 //       });
 //   };
 
-//   componentDidMount() {
-//     this.fetchStoryById();
-//   }
+importStoryById = () => {
+  this.setState({story_info: homelessStories[1], isLoading: false, error: null})
+}
+
+  componentDidMount() {
+    this.importStoryById();
+    // this.fetchStoryById();
+  }
 
   render() {
     const { story_info, isLoading, error } = this.state;

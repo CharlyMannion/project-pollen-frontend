@@ -30,7 +30,7 @@ class ShoeList extends Component {
 //   };
 
 importStories = () => {
-  console.log(homelessStories)
+  // console.log(homelessStories)
   this.setState({stories: homelessStories, isLoading: false, error: null})
 }
 
