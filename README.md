@@ -16,7 +16,25 @@ Check out the presentation slides [here](placeholder.com)
 * [Madhura Bhujbal](https://github.com/madhurabhujbal)
 * [Charly Mannion](https://github.com/CharlyMannion)
 
+## Goals
+
+### Overarching Product Goal
+We defined our overarching goal for this product as: 
+"To increase donations to Manchester's homeless community and to raise awareness surrounding the causes of homelessness."
+
+### Sprint Goal
+Our goal for this sprint was to create an app that would allow users to scan a QR code. This would then open a web app that would allow them to read the stories of homeless people. We would also set up 'fake door' donation buttons, to test if people would want to use our app to donate to homeless charities before we built this functioality. 
+
+### Learning Goals 
+* We wanted to have fully working backend and frontend code
+* We wanted to build our backend with MongoDB and the frontend with React
+* We wanted to have an excellent UX design, and learn how to use Figma
+
 ## Product Vision
+* To get people to think more about homelessness and donate more. Not just homelessness generally, but how people become homeless
+* To raise awareness and challenge stigma around homelessness, including invisible homelessness
+* To eventually have people downloading the 'Pollen' App
+* To engender a culture of giving regular donations (which would be the focus of the app in the future, not the website itself)
 
 ## User Stories
 ### MVP
