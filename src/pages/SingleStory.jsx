@@ -12,7 +12,7 @@ class SingleStory extends Component {
 
 //   fetchStoryById = () => {
 //     axios
-//       .get(`https://project-pollen.herokuapp.com/api/storys/${this.props.name}`)
+//       .get(`https://project-pollen.herokuapp.com/api/stories/${this.props.name}`)
 //       .then(({ data }) => {
 //         this.setState({
 //           story_info: data.stories[0],

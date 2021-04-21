@@ -6,17 +6,17 @@ import StoryCard from "../components/StoryCard";
 
 class ShoeList extends Component {
   state = {
-    story: [{person: "Mark", body: "Mark fell on hard times..."}, {person: "Edwin", body: "Edwin came from a broken home..."}],
+    stories: [{person: "Mark", body: "Mark fell on hard times..."}, {person: "Edwin", body: "Edwin came from a broken home..."}],
     isLoading: false,
   };
 
-//   fetchStory = () => {
+//   fetchStories = () => {
 //     axios
 //       .get(`https://project-pollen.herokuapp.com/api/stories/`, {
-//         params: { story: this.props.slug },
+//         params: { stories: this.props.slug },
 //       })
-//       .then(({ data: { story } }) => {
-//         this.setState({ story, isLoading: false, error: null });
+//       .then(({ data: { stories } }) => {
+//         this.setState({ stories, isLoading: false, error: null });
 //       })
 //       .catch(({ response }) => {
 //         this.setState({
@@ -29,31 +29,31 @@ class ShoeList extends Component {
 //   };
 
 //   componentDidMount() {
-//     this.fetchStory();
+//     this.fetchStories();
 //   }
 
 //   componentDidUpdate(prevProps, prevState) {
 //     if (prevProps.slug !== this.props.slug) {
 //       axios
 //         .get(`https://be-scheuster.herokuapp.com/api/stories/`, {
-//           params: { story: this.props.slug },
+//           params: { stories: this.props.slug },
 //         })
-//         .then(({ data: { story } }) => {
-//           this.setState({ story, isLoading: false });
+//         .then(({ data: { stories } }) => {
+//           this.setState({ stories, isLoading: false });
 //         });
 //     }
 //   }
 
   render() {
-    const { story, isLoading, error } = this.state;
+    const { stories, isLoading, error } = this.state;
     if (error) return <ErrorDisplay {...error} />;
     if (isLoading) return <Loader />;
 
     return (
       <Fade>
         <main className="storyList">
-          {story.map((element) => {
-            return <StoryCard {...element} key={element.name} />;
+          {stories.map((story) => {
+            return <StoryCard {...story} key={story.name} />;
           })}
         </main>
       </Fade>
