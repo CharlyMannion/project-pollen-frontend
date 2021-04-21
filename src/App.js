@@ -9,16 +9,8 @@ import AboutUs from './pages/AbousUs'
 import ContactUs from './pages/ContactUs'
 import StoryList from './pages/StoryList'
 import SingleStory from './pages/SingleStory'
-import axios from "axios";
 
 class App extends Component {
-
-  componentDidMount() {
-    axios.get('https://project-pollen-backend.herokuapp.com/api/stories')
-    .then(({data}) => {
-      console.log(data[0], "DATA")
-    })
-  }
 
   render() {
     return(
