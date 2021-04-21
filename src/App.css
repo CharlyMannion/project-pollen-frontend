@@ -179,6 +179,9 @@ nav li a {
 
 .slider-parent {
   position: relative;
+  margin: 0;
+  padding: 0;
+  
 }
 
 .bubble {
@@ -189,7 +192,7 @@ nav li a {
 .donation-container {
   background-color: rgba(41, 41, 170, 0.74);
   border-radius: 1em;
-  margin: 20%;
+  margin:10%;
   min-height: 20vh;
   display: flex;
   flex-direction: column;
