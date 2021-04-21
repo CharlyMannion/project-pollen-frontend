@@ -10,6 +10,7 @@ import ContactUs from './pages/ContactUs';
 import StoryList from './pages/StoryList';
 import SingleStory from './pages/SingleStory';
 import StoryCarousel from './components/StoryCarousel';
+import Slider from './components/Slider';
 
 class App extends Component {
 
@@ -26,6 +27,7 @@ class App extends Component {
           <StoryList path='/stories'/>
           <SingleStory path="/story/:id" />
         </Router>
+        <Slider/>
         <Footer />
       </div>
       </Fade>
