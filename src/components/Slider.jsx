@@ -13,17 +13,19 @@ function Slider() {
     });
 
     return (
-        <div className="slider-parent">
-            <input 
-            type = 'range'
-            min = '1'
-            max = '100'
-            value = {value}
-            onChange = {({ target: {value: radius} }) =>{
-                onChange(radius);
-            }}
-            />
-            <div className="bubble"> {value} </div>
+        <div className="donation-selection">
+            <div className="slider-parent">
+                <input 
+                type = 'range'
+                min = '1'
+                max = '100'
+                value = {value}
+                onChange = {({ target: {value: radius} }) =>{
+                    onChange(radius);
+                }}
+                />
+                <div className="bubble"> {value} </div>
+            </div>
         </div>
     )
 }

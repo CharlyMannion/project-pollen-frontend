@@ -162,3 +162,22 @@ nav li a {
   
 }
 
+.donation-selection {
+  background-color: yellow;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.slider-parent {
+  position: relative;
+}
+
+.bubble {
+  color: black;
+  position: relative;
+}
