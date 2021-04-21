@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import Carousel from 'react-elastic-carousel';
-
 import axios from "axios";
 import Fade from "react-reveal/Fade";
 import Loader from "../components/Loader";
 import ErrorDisplay from "../components/ErrorDisplay";
 import StoryCard from "../components/StoryCard";
 
-class StoryList extends Component {
+class StoryCarousel extends Component {
   state = {
     stories: [],
     isLoading: true,
@@ -54,13 +53,15 @@ class StoryList extends Component {
     return (
         <Fade>
           <main className="storyList">
+            <Carousel>
             {stories.map((story) => {
               return <StoryCard {...story} key={story.name} />;
             })}
+            </Carousel>
           </main>
         </Fade>
     );
   }
 }
 
-export default StoryList;
+export default StoryCarousel;
