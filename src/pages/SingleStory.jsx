@@ -11,10 +11,8 @@ class SingleStory extends Component {
   };
 
   fetchStoryById = () => {
-    console.log(this.props, "THIS PROPS")
     axios.get(`https://project-pollen-backend.herokuapp.com/api/stories/${this.props.id}`)
     .then(({ data }) => {
-        // console.log(data, "DATA FOR SINGLE")
         this.setState({
           story_info: data,
           isLoading: false,
