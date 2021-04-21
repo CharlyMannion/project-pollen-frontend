@@ -3,11 +3,12 @@ import Fade from "react-reveal/Fade";
 import Loader from "../components/Loader";
 import ErrorDisplay from "../components/ErrorDisplay";
 import StoryCard from "../components/StoryCard";
+const homelessStories = require('../placeholderData/stories')
 
 class ShoeList extends Component {
   state = {
-    stories: [{person: "Mark", body: "Mark fell on hard times..."}, {person: "Edwin", body: "Edwin came from a broken home..."}],
-    isLoading: false,
+    stories: [],
+    isLoading: true,
   };
 
 //   fetchStories = () => {
@@ -28,9 +29,15 @@ class ShoeList extends Component {
 //       });
 //   };
 
-//   componentDidMount() {
-//     this.fetchStories();
-//   }
+importStories = () => {
+  console.log(homelessStories)
+  this.setState({stories: homelessStories, isLoading: false, error: null})
+}
+
+  componentDidMount() {
+    this.importStories()
+    // this.fetchStories();
+  }
 
 //   componentDidUpdate(prevProps, prevState) {
 //     if (prevProps.slug !== this.props.slug) {

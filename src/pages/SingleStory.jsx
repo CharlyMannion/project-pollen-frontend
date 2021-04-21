@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 
 class SingleStory extends Component {
   state = {
-    story_info: {person: "Mark", body: "Mark fell on hard times..."},
+    story_info: {slug: 1, person: "Mark", body: "Mark fell on hard times..."},
     isLoading: false,
   };
 
