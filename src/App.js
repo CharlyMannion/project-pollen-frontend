@@ -2,13 +2,14 @@ import './App.css';
 import React, { Component } from 'react';
 import { Router } from '@reach/router';
 import Fade from "react-reveal/Fade";
-import Header from './components/Header'
-import Footer from './components/Footer'
-import NavBar from './components/NavBar'
-import AboutUs from './pages/AbousUs'
-import ContactUs from './pages/ContactUs'
-import StoryList from './pages/StoryList'
-import SingleStory from './pages/SingleStory'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import NavBar from './components/NavBar';
+import AboutUs from './pages/AbousUs';
+import ContactUs from './pages/ContactUs';
+import StoryList from './pages/StoryList';
+import SingleStory from './pages/SingleStory';
+import StoryCarousel from './components/StoryCarousel';
 
 class App extends Component {
 
@@ -19,6 +20,7 @@ class App extends Component {
         <Header />
         <NavBar />
         <Router>
+          <StoryCarousel path='/'/>
           <AboutUs path='/aboutus'/>
           <ContactUs path='/contactus'/>
           <StoryList path='/stories'/>
