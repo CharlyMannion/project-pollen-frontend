@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Carousel from 'react-elastic-carousel';
-
 import axios from "axios";
 import Fade from "react-reveal/Fade";
 import Loader from "../components/Loader";

@@ -18,6 +18,7 @@ class App extends Component {
       <Fade>
       <div>
         <Header />
+        <HeroSection />
         <Router>
           <StoryCarousel path='/'/>
           <AboutUs path='/aboutus'/>
@@ -25,7 +26,6 @@ class App extends Component {
           <StoryList path='/stories'/>
           <SingleStory path="/story/:id" />
         </Router>
-        <HeroSection />
         <Footer />
       </div>
       </Fade>
