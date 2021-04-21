@@ -1,9 +1,8 @@
 import React, { Component } from "react";
+import axios from "axios";
 import Loader from "../components/Loader";
 import ErrorDisplay from "../components/ErrorDisplay";
 import Fade from "react-reveal/Fade";
-const homelessStories = require('../placeholderData/stories')
-// import axios from "axios";
 
 class SingleStory extends Component {
   state = {
@@ -11,33 +10,27 @@ class SingleStory extends Component {
     isLoading: true,
   };
 
-//   fetchStoryById = () => {
-//     axios
-//       .get(`https://project-pollen.herokuapp.com/api/stories/${this.props.name}`)
-//       .then(({ data }) => {
-//         this.setState({
-//           story_info: data.stories[0],
-//           isLoading: false,
-//           error: null,
-//         });
-//       })
-//       .catch(({ response }) => {
-//         this.setState({
-//           error: {
-//             status: response.status,
-//             message: response.data.msg,
-//           },
-//         });
-//       });
-//   };
-
-importStoryById = () => {
-  this.setState({story_info: homelessStories[1], isLoading: false, error: null})
-}
+  fetchStoryById = () => {
+    axios.get(`https://project-pollen-backend.herokuapp.com/api/stories/${this.props.id}`)
+    .then(({ data }) => {
+        this.setState({
+          story_info: data,
+          isLoading: false,
+          error: null,
+        });
+      })
+      .catch(({ response }) => {
+        this.setState({
+          error: {
+            status: response.status,
+            message: response.data.msg,
+          },
+        });
+      });
+  };
 
   componentDidMount() {
-    this.importStoryById();
-    // this.fetchStoryById();
+    this.fetchStoryById();
   }
 
   render() {
@@ -48,13 +41,13 @@ importStoryById = () => {
     return (
       <Fade>
       <main className="single-page-story">
-        <h2>{story_info.person}</h2>
+        <h2>{story_info.name}</h2>
         <p
           className="avatar"
           src={story_info.avatar_url}
           alt="missing story image..."
         ></p>
-        <p>{story_info.body}</p>
+        <p>{story_info.story.title}</p>
       </main>
       </Fade>
     );

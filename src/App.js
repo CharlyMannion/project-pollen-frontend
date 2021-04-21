@@ -22,7 +22,7 @@ class App extends Component {
           <AboutUs path='/aboutus'/>
           <ContactUs path='/contactus'/>
           <StoryList path='/stories'/>
-          <SingleStory path="/story/:name" />
+          <SingleStory path="/story/:id" />
         </Router>
         <Footer />
       </div>
