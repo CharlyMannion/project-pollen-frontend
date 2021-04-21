@@ -31,8 +31,8 @@ class ShoeList extends Component {
   }
 
   // the below functionality is only really needed if filteing stories e.g. by category
-  componentDidUpdate(prevProps, prevState) {
-    console.log(prevProps, "previous props")
+  // componentDidUpdate(prevProps, prevState) {
+  //   console.log(prevProps, "previous props")
 //     if (prevProps.slug !== this.props.slug) {
 //       axios
 //         .get(`https://be-scheuster.herokuapp.com/api/stories/`, {
@@ -42,7 +42,7 @@ class ShoeList extends Component {
 //           this.setState({ stories, isLoading: false });
 //         });
 //     }
-  }
+  // }
 
   render() {
     const { stories, isLoading, error } = this.state;

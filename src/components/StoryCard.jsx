@@ -12,7 +12,7 @@ const StoryCard = (props) => {
           alt="missing story image..."
         ></p>
         <Link
-          to={`/story/${props.slug}`}
+          to={`/story/${props._id}`}
           style={{ color: "inherit", textDecoration: "none" }}
         >
           <h3>{props.name}</h3>
