@@ -57,11 +57,8 @@ class SingleStory extends Component {
           <figcaption class="caption">{story_info.story.title}</figcaption>
          </figure>
          <section/>
-            {/* {story_info.story.paragraphs.map((parapraph) => {
-              return <p>{paragraph}</p>
-            })} */}
           <p>{story_info.story.paragraphs[0]}</p>
-          <h3><b>"{story_info.story.quotes[1]}"</b></h3>
+          <h3>"{story_info.story.quotes[1]}"</h3>
           <p>{story_info.story.paragraphs[1]}</p>
           <p>{story_info.story.paragraphs[2]}</p>
          <section/>
