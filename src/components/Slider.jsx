@@ -22,11 +22,9 @@ function Slider() {
                 <div className="donation-greetings">
                     <DonationGreetings donation={donation}/>
                 </div>
-                <div className="donation-slider-button">
-                    <DonationButtons handleClick={handleClick}/>
-                    <div className="donation-slider">
-                        <BigSlider donation={donation} onChange={onChange} />
-                    </div>
+                <DonationButtons donation={donation} handleClick={handleClick}/>
+                <div className="donation-slider">
+                    <BigSlider donation={donation} onChange={onChange} />
                 </div>
                 <div className="other-amount">
                     <p> OTHER AMOUNT </p>
