@@ -2,6 +2,8 @@
 
 * {
   font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -89,6 +91,14 @@
   }
 }
 
+.container {
+  position: relative;
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo-container {
   display: flex;
   align-content: center;
@@ -104,23 +114,30 @@
   margin: 20px 10px;
 }
 
-.nav-link {
-  font-size: 18px;
-  padding: 20px 20px;
-  font-weight: 500;
+nav ul {
+  display: none;
 }
 
-.container {
-  position: relative;
-  width: 1300px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+.donate-btn {
+  display: none;
 }
 
 ul {
   display: inline-block;
   list-style: none;
+}
+
+.hero-section {
+  background-image: url("./images/pollen.png");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text-container {
+  width: 80%;
 }
 
 a {
@@ -130,35 +147,163 @@ nav {
   position: relative;
   margin: 0 auto;
 }
+
 header {
   position: relative;
 }
 nav li a {
-
   color: black;
 }
 
-.hero-section {
-  background-image: url("./images/pollen.png");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.burger-menu {
   position: relative;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
-.hero-text-container {
-  width: 40%;
+.burger-menu span {
+  display: block;
+  background-color: black;
+  transition: 200ms;
+  padding: 2px 16px;
+  margin: 6px;
+}
+
+.burger-span-1 {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.burger-span-2 {
+  transform: scale(0);
+}
+
+.burger-span-3 {
+  transform: translateY(-10px) rotate(45deg);
 }
 
 .hero-text h2{
-  margin-top: 10%;
-  font-size: 4.5em;
-  margin-bottom: 0;
+  font-size: 2.4em;
 }
 
-.hero-text p {
-  font-size:  2em;
+.quote-section img {
+  width: 100vw;
+  margin: 0;
+}
+
+.quote-section h3 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.quote-section .quote-container {
+  padding: 25px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .hero-text h2{
+    font-size: 2.6em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .burger-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  .donate-btn {
+    display: inline-block;
+  }
+
+  .hero-text h2{
+    font-size: 3.4em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .hero-text h2{
+    font-size: 3.8em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .logo {
+    width: 100px;
+  }
   
-}
+  .logo-text {
+    /* display: inline-block; */
+    color: rgb(72, 180, 243);
+    margin: 20px 10px;
+  }
+  
+  .nav-link {
+    font-size: 18px;
+    padding: 20px 20px;
+    font-weight: 500;
+  }
+  
+  .container {
+    width: 1300px;
+  }
+  
+  .hero-section {
+    height: 700px;
+  }
+  
+  .hero-text-container {
+    width: 40%;
+  }
+  
+  .hero-text h2{
+    font-size: 4.5em;
+  }
+  
+  .hero-text p {
+    font-size:  2em;
+  }
 
+  .quote-section {
+    display: flex;
+  }
+
+  .quote-section img {
+    padding: 150px 0 150px 150px;
+    width: 40vw;
+    margin: 0;
+  }
+
+  .quote-section h3 {
+    font-size: 4.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: left;
+    margin: 15px 0 25px 0;
+  }
+
+  .quote-section p {
+    font-size: 1.6em;
+  }
+  
+  .quote-section .quote-container {
+    padding: 125px;
+  }
+
+
+
+
+}
