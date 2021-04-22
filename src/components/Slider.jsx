@@ -19,16 +19,20 @@ function Slider() {
                 <h2>Help us to make a difference.</h2>
             </div>
             <div className="donation-container">
-            <div className="donation-greetings">
-                <DonationGreetings donation={donation}/>
-            </div>
-                <DonationButtons handleClick={handleClick}/>
-                <BigSlider donation={donation} onChange={onChange} />
+                <div className="donation-greetings">
+                    <DonationGreetings donation={donation}/>
+                </div>
+                <div className="donation-slider-button">
+                    <DonationButtons handleClick={handleClick}/>
+                    <div className="donation-slider">
+                        <BigSlider donation={donation} onChange={onChange} />
+                    </div>
+                </div>
                 <div className="other-amount">
                     <p> OTHER AMOUNT </p>
                 </div>
                 <div>
-                    <StyledButton style={{marginBottom: "25px", boxShadow: "3px 3px black"}}>Donate</StyledButton>
+                    <StyledButton style={{marginBottom: "5px", boxShadow: "3px 3px black"}}>Donate</StyledButton>
                 </div>
             </div>
         </div>

@@ -2,9 +2,9 @@
 import React from "react";
 import { Range, getTrackBackground } from "react-range";
 
-const STEP = 20;
+const STEP = 1;
 const MIN = 0;
-const MAX = 100;
+const MAX = 50;
 
 class BigSlider extends React.Component {
   render() {

@@ -24,7 +24,6 @@ class App extends Component {
           <StoryList path='/stories' />
           <SingleStory path="/story/:id" />
         </Router>
-        <Slider/>
         <Footer />
       </div>
       </Fade>
