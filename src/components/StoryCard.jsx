@@ -6,11 +6,12 @@ const StoryCard = (props) => {
   return (
     <Fade>
       <section className="story-card">
-        <p
+        <img
           className="avatar"
-          src={props.avatar_url}
+          src={props.image}
           alt="missing story image..."
-        ></p>
+        ></img>
+        <div>
         <Link
           to={`/story/${props._id}`}
           style={{ color: "inherit", textDecoration: "none" }}
@@ -18,6 +19,7 @@ const StoryCard = (props) => {
           <h3>{props.name}</h3>
         </Link>
         <p>{props.story.title}</p>
+        </div>
       </section>
     </Fade>
   );
