@@ -15,6 +15,10 @@
   pointer-events: none;
 }
 
+.ul.bullet {
+  align-items: left;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -135,6 +139,14 @@
 
 .single-page-story section {
   justify-content: flex-start;
+}
+
+.text-page {
+  height: 500px;
+  background-image: url("./images/backround_pollen_2.png"), url("./images/backround_pollen_1.png");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 20%, 15%;  
 }
 
 @keyframes App-logo-spin {
@@ -433,7 +445,6 @@ nav li a {
     width: 40%;
   }
 
-
   .carousel-story {
     width: 40%;
   }
@@ -445,6 +456,13 @@ nav li a {
 
   .footer-container {
     margin-top: 25px;
+  }
+
+  .text-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;  
   }
 
 }

@@ -5,11 +5,22 @@ class AboutUs extends Component {
   render() {
     return (
       <Fade>
-      <body>
+      <body className="text-page">
         <h1> About Us</h1>
-        <p>
+        <br/>
+        <h2>
             Welcome to pollen - The Monzo of donating
-        </p>
+        </h2>
+        <br />
+        <h2>An app that allows Mancunians to:</h2>
+        <br />
+        <ul class="bullet">
+          <li>- Be cashless</li>
+          <li>- Donate one off</li>
+          <li>- Gain awareness of systemic issues</li>
+          <li>- Connect with the stories of individuals</li>
+          <li>- Control where their donation goes</li>
+        </ul>
       </body>
       </Fade>
     );
