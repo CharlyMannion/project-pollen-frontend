@@ -3,9 +3,9 @@ import NavBar from './NavBar';
 
 const Header = () => {
     return (
-    <header className="App-header">
-        <NavBar />
-    </header>
+        <header className="App-header">
+            <NavBar />
+        </header>
     )
 }
 

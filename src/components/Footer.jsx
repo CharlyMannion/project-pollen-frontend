@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
     return (
-    <footer className="App-footer">
-        <p>Registered Charity</p>
-    </footer>
+        <footer className="App-footer">
+            <p>Registered Charity</p>
+        </footer>
     )
 }
 
