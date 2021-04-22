@@ -274,7 +274,7 @@ nav li a {
   }
 
   .carousel-container {
-    position: absolute;
+    position: relative;
     width: 1710px;
     height: 911px;
     left: 129px;
