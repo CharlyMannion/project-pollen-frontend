@@ -4,13 +4,12 @@ import { Router } from '@reach/router';
 import Fade from "react-reveal/Fade";
 import Header from './components/Header';
 import Footer from './components/Footer';
-import HeroSection from './components/HeroSection'
-import QuoteSection from './components/QuoteSection'
-import AboutUs from './pages/AbousUs';
+import Landing from './pages/Landing';
+import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import StoryList from './pages/StoryList';
 import SingleStory from './pages/SingleStory';
-import StoryCarousel from './components/StoryCarousel';
+
 
 class App extends Component {
 
@@ -19,13 +18,11 @@ class App extends Component {
       <Fade>
       <div>
         <Header />
-        <HeroSection />
-        <QuoteSection />
         <Router>
-          <StoryCarousel path='/'/>
-          <AboutUs path='/aboutus'/>
-          <ContactUs path='/contactus'/>
-          <StoryList path='/stories'/>
+          <Landing path='/' />
+          <AboutUs path='/aboutus' />
+          <ContactUs path='/contactus' />
+          <StoryList path='/stories' />
           <SingleStory path="/story/:id" />
         </Router>
         <Footer />

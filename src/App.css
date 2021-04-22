@@ -191,7 +191,7 @@ nav li a {
 }
 
 .quote-section h3 {
-  font-size: 36px;
+  font-size: 2.2em;
   font-style: normal;
   font-weight: 700;
   line-height: 49px;
@@ -201,6 +201,38 @@ nav li a {
 
 .quote-section .quote-container {
   padding: 25px;
+}
+
+.charity-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.charity-section h2 {
+  font-size: 2.4em;
+  margin-bottom: 20px;
+}
+
+.charity-container {
+  position: relative;
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.charity-icon {
+  width: 35vw;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -268,6 +300,39 @@ nav li a {
   .hero-text h2{
     font-size: 3.8em;
   }
+
+
+  .charity-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .charity-section h2 {
+    font-size: 3.8em;
+    margin-bottom: 30px;
+  }
+
+  .charity-section p {
+    font-size: 18px;
+  }
+  
+  .charity-container {
+    position: relative;
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 65px;
+  }
+  
+  
+  .charity-icon {
+    width: 300px;
+    margin: 20px;
+  }
   
   .carousel-story {
     width: 40%;
@@ -280,6 +345,7 @@ nav li a {
     top: 952px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
