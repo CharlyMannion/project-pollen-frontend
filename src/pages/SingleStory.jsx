@@ -42,11 +42,13 @@ class SingleStory extends Component {
       <Fade>
       <main className="single-page-story">
         <h2>{story_info.name}</h2>
-        <p
+        <br/>
+        <img
           className="avatar"
-          src={story_info.avatar_url}
+          src={story_info.image}
           alt="missing story image..."
-        ></p>
+        ></img>
+        <br/>
         <p>{story_info.story.title}</p>
       </main>
       </Fade>
