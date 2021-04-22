@@ -189,7 +189,7 @@ Madhura continued working on the sliding feature within the Donation Component.
 
 Edwin built out the Charity section, the Burger Menu, and defined some break points.
 
-Charly finished working on the Carousel Component, then moved on to styling the StoryArticle, StoryCard and AboutUs components.
+Charly finished working on the Carousel Component and created a ContactForm, then moved on to styling the StoryArticle, StoryCard and AboutUs components.
 
 
 ## Challenges
