@@ -2,27 +2,27 @@ import React from "react";
 import { Link } from "@reach/router";
 import Fade from "react-reveal/Fade";
 
-const StoryCard = (props) => {
+const CarouselStoryCard = (props) => {
   return (
     <Fade>
-      <section className="story-card">
+      <section className="carousel-story">
         <img
           className="avatar"
           src={props.image}
           alt="missing story image..."
         ></img>
-        <div>
+        <br/>
         <Link
           to={`/story/${props._id}`}
           style={{ color: "inherit", textDecoration: "none" }}
         >
           <h3>{props.name}</h3>
         </Link>
+        <br/>
         <p>{props.story.title}</p>
-        </div>
       </section>
-    </Fade>
+      </Fade>
   );
 };
 
-export default StoryCard;
+export default CarouselStoryCard;

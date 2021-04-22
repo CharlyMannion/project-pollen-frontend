@@ -2,15 +2,21 @@
 
 * {
   font-family: 'Nunito', sans-serif;
+  margin: 0;
 }
 
 .App {
   text-align: center;
+  overflow-y: scroll;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.ul.bullet {
+  align-items: left;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -30,7 +36,7 @@
 }
 
 .App-footer {
-  background-color: #282c34;
+  background-color: #FBC108;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -44,17 +50,38 @@
   color: #61dafb;
 }
 
+.storyList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .story-card {
   display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    min-height: 10vh;
-    width: 60%;
-    padding: 1rem 2rem;
-    margin: 1rem;
-    background-color: rgb(244, 246, 247);
-    color: rgba(83, 107, 120, 1);
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: left;
+  justify-content: space-around;
+  min-height: 10vh;
+  width: 60%;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: rgb(244, 246, 247);
+  color: rgba(83, 107, 120, 1);
+}
+
+.story-card img {
+  height: auto;
+  width: 20vh;
+}
+
+.story-card div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
 }
 
 .story-card:hover {
@@ -71,13 +98,55 @@
 
 .single-page-story {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 98%;
-  background-color: grey;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: flex-start;
+  justify-content: space-evenly;
+  align-items: top;
+  height: 180vh;
+  width: 100%;
+  background-image: url("./images/backround_pollen_2.png"), url("./images/backround_pollen_1.png");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 40%, 35%;  
   border: 4px solid #ebe6e1;
-  color: rgba(253, 247, 250, 1);
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.single-page-story body {
+  justify-content: flex-start;
+  height: 10vh;
+}
+
+.single-page-story figure {
+  width: 25%;
+  height: 20vh;
+  margin-right: 5px;
+
+}
+
+.single-page-story figure img {
+  height: 100%;
+  margin-top: 5px;
+
+}
+
+.single-page-story figure figcaption {
+  display: block;
+  width: 75%;
+  font-size: 10px;
+}
+
+.single-page-story section {
+  justify-content: flex-start;
+}
+
+.text-page {
+  height: 600px;
+  background-image: url("./images/backround_pollen_2.png"), url("./images/backround_pollen_1.png");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 20%, 15%;  
 }
 
 @keyframes App-logo-spin {
@@ -87,6 +156,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  position: relative;
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo-container {
@@ -104,23 +181,30 @@
   margin: 20px 10px;
 }
 
-.nav-link {
-  font-size: 18px;
-  padding: 20px 20px;
-  font-weight: 500;
+nav ul {
+  display: none;
 }
 
-.container {
-  position: relative;
-  width: 1300px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+.donate-btn {
+  display: none;
 }
 
 ul {
   display: inline-block;
   list-style: none;
+}
+
+.hero-section {
+  background-image: url("./images/pollen.png");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text-container {
+  width: 80%;
 }
 
 a {
@@ -130,37 +214,346 @@ nav {
   position: relative;
   margin: 0 auto;
 }
+
 header {
   position: relative;
 }
 nav li a {
-
   color: black;
 }
 
-.hero-section {
-  background-image: url("./images/pollen.png");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.burger-menu {
   position: relative;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
-.hero-text-container {
-  width: 40%;
+.burger-menu span {
+  display: block;
+  background-color: black;
+  transition: 200ms;
+  padding: 2px 16px;
+  margin: 6px;
+}
+
+.burger-span-1 {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.burger-span-2 {
+  transform: scale(0);
+}
+
+.burger-span-3 {
+  transform: translateY(-10px) rotate(45deg);
 }
 
 .hero-text h2{
-  margin-top: 10%;
-  font-size: 4.5em;
-  margin-bottom: 0;
+  font-size: 2.4em;
 }
 
-.hero-text p {
-  font-size:  2em;
-  
+.quote-section img {
+  width: 100vw;
+  margin: 0;
 }
+
+.quote-section h3 {
+  font-size: 2.2em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.quote-section .quote-container {
+  padding: 25px;
+}
+
+.charity-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.charity-section h2, 
+.artist-section h2 {
+  font-size: 2.4em;
+  margin-bottom: 20px;
+}
+
+.charity-container {
+  position: relative;
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.charity-icon {
+  width: 35vw;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  color: black;
+}
+
+.footer-container ul {
+  margin-bottom: 15px;
+}
+
+.footer-container a {
+  margin: 0 8px;
+  color: black;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .hero-text h2{
+    font-size: 2.6em;
+  }
+
+  .story-card {
+    width: 25%
+  } 
+
+  .single-page-story {
+    height: 100vh;
+    background-size: 25%, 20%;  
+    border: none;
+    padding: 50px;
+  }
+
+  .single-page-story p {
+    max-width: 75%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .burger-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  .donate-btn {
+    display: inline-block;
+  }
+
+  .hero-text h2{
+    font-size: 3.4em;
+  }
+}
+
+.storyList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container {
+  background-image: url("./images/backround_pollen_2.png"), url("./images/backround_pollen_1.png");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 20%, 15%;
+  margin: 20px auto;
+}
+
+.carousel-story {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+  margin-left: 50px;
+  /* left: calc(50% - 377px/2 - 36.5px); */
+  /* top: calc(50% - 225px/2 + 206px); */
+  background: #F9F9F9;
+  box-shadow: 3px 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-story img {
+  height: 70%;
+  width: auto;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .hero-text h2{
+    font-size: 3.8em;
+  }
+
+
+  .charity-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .charity-section h2,
+  .artist-section h2 {
+    font-size: 3.8em;
+    margin-bottom: 30px;
+  }
+
+  .charity-section p {
+    font-size: 18px;
+  }
+  
+  .charity-container {
+    position: relative;
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 65px;
+  }
+  
+  .charity-icon {
+    width: 300px;
+    margin: 20px;
+  }
+  
+  .carousel-story {
+    width: 40%;
+  }
+
+  .carousel-story {
+    width: 40%;
+  }
+
+  .carousel-container {
+    width: 90vw;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .footer-container {
+    margin-top: 25px;
+  }
+
+  .text-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;  
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .logo {
+    width: 100px;
+  }
+  
+  .logo-text {
+    /* display: inline-block; */
+    color: rgb(72, 180, 243);
+    margin: 20px 10px;
+  }
+  
+  .nav-link {
+    font-size: 18px;
+    padding: 20px 20px;
+    font-weight: 500;
+  }
+  
+  .container {
+    width: 1300px;
+  }
+  
+  .hero-section {
+    height: 700px;
+  }
+  
+  .hero-text-container {
+    width: 40%;
+  }
+  
+  .hero-text h2{
+    font-size: 4.5em;
+  }
+  
+  .hero-text p {
+    font-size:  2em;
+  }
+
+  .quote-section {
+    display: flex;
+  }
+
+  .quote-section img {
+    padding: 150px 0 150px 150px;
+    width: 40vw;
+    margin: 0;
+  }
+
+  .quote-section h3 {
+    font-size: 4.5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: left;
+    margin: 15px 0 25px 0;
+  }
+
+  .quote-section p {
+    font-size: 1.6em;
+  }
+  
+  .quote-section .quote-container {
+    padding: 125px;
+  }
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button[type=submit] {
+  color: white;
+    background-color: #1582D1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 
 .donation-card-title h2{
   padding: 15px;
@@ -236,3 +629,8 @@ nav li a {
   top: 45px;
   right: 28px;
 }
+
+button[type=submit]:hover {
+  background-color: #1582D1;
+}
+

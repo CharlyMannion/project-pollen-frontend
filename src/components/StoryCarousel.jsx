@@ -4,7 +4,7 @@ import axios from "axios";
 import Fade from "react-reveal/Fade";
 import Loader from "../components/Loader";
 import ErrorDisplay from "../components/ErrorDisplay";
-import StoryCard from "../components/StoryCard";
+import CarouselStoryCard from "../components/CarouselStoryCard";
 
 class StoryCarousel extends Component {
   state = {
@@ -13,37 +13,23 @@ class StoryCarousel extends Component {
   };
 
   fetchStories = () => {
-      axios.get('https://project-pollen-backend.herokuapp.com/api/stories')
-      .then(({data}) => {
-        this.setState({ stories: data, isLoading: false, error: null });
-      })
-      .catch(({ response }) => {
-        this.setState({
-          error: {
-            status: response.status,
-            message: response.data.msg,
-          },
-        });
+    axios.get('https://project-pollen-backend.herokuapp.com/api/stories')
+    .then(({data}) => {
+      this.setState({ stories: data, isLoading: false, error: null });
+    })
+    .catch(({ response }) => {
+      this.setState({
+        error: {
+          status: response.status,
+          message: response.data.msg,
+        },
       });
+    });
   };
 
   componentDidMount() {
     this.fetchStories();
   }
-
-  // the below functionality is only really needed if filteing stories e.g. by category
-  // componentDidUpdate(prevProps, prevState) {
-  //   console.log(prevProps, "previous props")
-//     if (prevProps.slug !== this.props.slug) {
-//       axios
-//         .get(`https://be-scheuster.herokuapp.com/api/stories/`, {
-//           params: { stories: this.props.slug },
-//         })
-//         .then(({ data: { stories } }) => {
-//           this.setState({ stories, isLoading: false });
-//         });
-//     }
-  // }
 
   render() {
     const { stories, isLoading, error } = this.state;
@@ -52,10 +38,10 @@ class StoryCarousel extends Component {
 
     return (
         <Fade>
-          <main className="storyList">
+          <main className="carousel-container">
             <Carousel>
             {stories.map((story) => {
-              return <StoryCard {...story} key={story.name} />;
+              return <CarouselStoryCard {...story} key={story.name} />;
             })}
             </Carousel>
           </main>
