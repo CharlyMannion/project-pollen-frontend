@@ -586,7 +586,7 @@ button[type=submit] {
   font-size: calc(10px + 2vmin);
   color: white;
   text-align: center;
-  box-shadow: 4px 4px 3px 5px #828585;
+  box-shadow: 4px 4px 4px 3px rgb(134, 134, 134);
 }
 
 .donation-greetings p{

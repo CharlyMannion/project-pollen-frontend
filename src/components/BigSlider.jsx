@@ -19,7 +19,6 @@ class BigSlider extends React.Component {
         <Range
           values={this.props.donation}
           step={STEP}
-          // step={this.props.donation * 100}
           min={MIN}
           max={MAX}
           onChange={(values) => {
@@ -56,29 +55,21 @@ class BigSlider extends React.Component {
               </div>
             </div>
           )}
-          renderThumb={({ props, isDragged }) => (
+          renderThumb={({ props }) => (
             <div
               {...props}
               style={{
                 ...props.style,
-                height: "28px",
-                width: "28px",
+                height: "25px",
+                width: "25px",
                 borderRadius: "20px",
-                backgroundColor: "#FFF",
+                backgroundColor: "#a5a4a4",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                boxShadow: "0px 2px 6px #AAA",
                 outline: "none"
               }}
             >
-              <div
-                style={{
-                  height: "16px",
-                  width: "5px",
-                  backgroundColor: isDragged ? "#548BF4" : "#CCC"
-                }}
-              />
             </div>
           )}
         />
