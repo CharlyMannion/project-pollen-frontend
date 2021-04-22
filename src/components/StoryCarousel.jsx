@@ -13,18 +13,18 @@ class StoryCarousel extends Component {
   };
 
   fetchStories = () => {
-      axios.get('https://project-pollen-backend.herokuapp.com/api/stories')
-      .then(({data}) => {
-        this.setState({ stories: data, isLoading: false, error: null });
-      })
-      .catch(({ response }) => {
-        this.setState({
-          error: {
-            status: response.status,
-            message: response.data.msg,
-          },
-        });
+    axios.get('https://project-pollen-backend.herokuapp.com/api/stories')
+    .then(({data}) => {
+      this.setState({ stories: data, isLoading: false, error: null });
+    })
+    .catch(({ response }) => {
+      this.setState({
+        error: {
+          status: response.status,
+          message: response.data.msg,
+        },
       });
+    });
   };
 
   componentDidMount() {
