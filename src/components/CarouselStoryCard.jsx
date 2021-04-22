@@ -6,11 +6,11 @@ const CarouselStoryCard = (props) => {
   return (
     <Fade>
       <section className="carousel-story">
-        <p
+        <img
           className="avatar"
-          src={props.avatar_url}
+          src={props.image}
           alt="missing story image..."
-        ></p>
+        ></img>
         <Link
           to={`/story/${props._id}`}
           style={{ color: "inherit", textDecoration: "none" }}

@@ -43,7 +43,6 @@ class StoryCarousel extends Component {
             <Carousel>
             {stories.map((story) => {
               return <CarouselStoryCard {...story} key={story.name} />;
-              // return <Item><CarouselStoryCard {...story} key={story.name} /></Item>;
             })}
             </Carousel>
           </main>
