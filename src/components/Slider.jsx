@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../App.css';
 import BigSlider from "./BigSlider";
+import DonationButtons from "./DonationButtons";
 import StyledButton from '../styledComponents/StyledButton';
 
 
@@ -8,8 +9,7 @@ function Slider() {
     const [donation, onChange] = useState([0]);
 
     function handleClick(e) {
-        console.log("hello");
-        onChange([5]);
+        onChange([e.target.value]);
     }
     return (
         <div className="donation-selection">
@@ -20,11 +20,7 @@ function Slider() {
                 <div className="donation-details">
                     <p>Donation {donation} is virtue</p>
                 </div>
-                <div className="row">
-                    <button onClick= {handleClick}>£1</button>
-                    <button>£5</button>
-                    <button>£10</button>
-                </div>
+                <DonationButtons handleClick={handleClick}/>
                 <BigSlider donation={donation} onChange={onChange} />
                 <div className="other-amount">
                     <a href="#" > OTHER AMOUNT </a>
