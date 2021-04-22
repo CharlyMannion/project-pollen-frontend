@@ -13,7 +13,7 @@ class SingleStory extends Component {
   fetchStoryById = () => {
     axios.get(`https://project-pollen-backend.herokuapp.com/api/stories/${this.props.id}`)
     .then(({ data }) => {
-      console.log(data.story.paragraphs, "STORY DATA")
+      console.log(data.story.quotes, "STORY DATA")
         this.setState({
           story_info: data,
           isLoading: false,
@@ -61,6 +61,7 @@ class SingleStory extends Component {
               return <p>{paragraph}</p>
             })} */}
           <p>{story_info.story.paragraphs[0]}</p>
+          <p><b>{story_info.story.quotes[1]}</b></p>
           <p>{story_info.story.paragraphs[1]}</p>
           <p>{story_info.story.paragraphs[2]}</p>
          <section/>
