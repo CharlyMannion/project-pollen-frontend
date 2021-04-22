@@ -179,9 +179,28 @@ Madhura worked on the sliding bar for our Donation Component.
 
 After finishing up her beautiful designs for our landing page, Alex moved on to designing the story page.
 
+### Day 3: Thursday 22nd April 2021
+
+We started the day feeling happy with our progress, and confident that we'd reach our MVP and be able to move on to some 'nice to have features' such as the QR code.
+
+After finishing the designs, Alex started work on our presentation for Monday. 
+
+Madhura continued working on the sliding feature within the Donation Component.
+
+Edwin built out the Charity section, the Burger Menu, and defined some break points.
+
+Charly finished working on the Carousel Component, then moved on to styling the StoryArticle, StoryCard and AboutUs components.
+
+
 ## Challenges
+
+* We encountered a few small isues when hosting our backend, but these were resolved fairly quickly
 
 ## Successes
 
+* We had a really fun week building out our project. We set out with a clear vision of what we wanted to achieve, and how we would achieve it. Then we worked hard to get there
+* We loved using React for the frontend
+
 ## What we would do differently next time
 
+* We would write unit tests for the backend up front
