@@ -5,13 +5,17 @@ import BigSlider from "./BigSlider";
 
 function Slider() {
     const [donation, onChange] = useState([0]);
-    const msg = () => {console.log('Current donation ' , donation);}
     return (
         <div className="donation-selection">
             <div className="donation-card-title">
                 <h2>Help us to make a difference.</h2>
             </div>
-            <BigSlider msg={msg} donation={donation} onChange={onChange} />     
+            <div className="donation-container">
+                <div className="donation-details">
+                    <p>Donation {donation} is virtue</p>
+                </div>
+                <BigSlider donation={donation} onChange={onChange} />     
+            </div>
         </div>
     )
 }

@@ -7,9 +7,6 @@ const MIN = 0;
 const MAX = 100;
 
 class BigSlider extends React.Component {
-  state = {
-    values: [50]
-  };
   render() {
     return (
       <div
@@ -28,7 +25,6 @@ class BigSlider extends React.Component {
           onChange={(values) => {
                 this.setState({ values });
                 this.props.onChange(values);
-                this.props.msg();
             }}
           renderTrack={({ props, children }) => (
             <div
@@ -49,7 +45,7 @@ class BigSlider extends React.Component {
                   borderRadius: "4px",
                   background: getTrackBackground({
                     values: this.props.donation,
-                    colors: ["#548BF4", "#ccc"],
+                    colors: ["white", "#ccc"],
                     min: MIN,
                     max: MAX
                   }),
