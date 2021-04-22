@@ -14,7 +14,7 @@ class BigSlider extends React.Component {
           display: "flex",
           justifyContent: "center",
           flexWrap: "wrap",
-          margin: "2em"
+          margin: "2em",
         }}
       >
         <Range
@@ -34,7 +34,9 @@ class BigSlider extends React.Component {
                 ...props.style,
                 height: "36px",
                 display: "flex",
-                width: "100%"
+                width: "70%",
+                paddingTop: "4.5%",
+                top: "50%"
               }}
             >
               <div
