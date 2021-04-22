@@ -5,7 +5,6 @@ import Fade from "react-reveal/Fade";
 import Loader from "../components/Loader";
 import ErrorDisplay from "../components/ErrorDisplay";
 import CarouselStoryCard from "../components/CarouselStoryCard";
-// import Item from '../styledComponents/Item';
 
 class StoryCarousel extends Component {
   state = {
