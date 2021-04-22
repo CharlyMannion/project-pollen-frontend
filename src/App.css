@@ -142,7 +142,7 @@
 }
 
 .text-page {
-  height: 500px;
+  height: 600px;
   background-image: url("./images/backround_pollen_2.png"), url("./images/backround_pollen_1.png");
   background-position: left top, right bottom;
   background-repeat: no-repeat;
@@ -532,4 +532,28 @@ nav li a {
   .quote-section .quote-container {
     padding: 125px;
   }
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button[type=submit] {
+  color: white;
+    background-color: #1582D1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #1582D1;
 }

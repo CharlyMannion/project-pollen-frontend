@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
+import ContactForm from '../components/ContactForm'
 
 class ContactUs extends Component {
   render() {
@@ -17,6 +18,8 @@ class ContactUs extends Component {
           <strong> Email Enquiries: </strong>
           <a href="online@projectpollen.co.uk">online@projectpollen.co.uk</a>
         </p>
+        <br/>
+        <ContactForm />
       </body>
       </Fade>
     );
