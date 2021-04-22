@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import '../App.css';
 import BigSlider from "./BigSlider";
 import DonationButtons from "./DonationButtons";
+import DonationGreetings from "./DonationGreetings";
 import StyledButton from '../styledComponents/StyledButton';
 
 
@@ -17,9 +18,9 @@ function Slider() {
                 <h2>Help us to make a difference.</h2>
             </div>
             <div className="donation-container">
-                <div className="donation-details">
-                    <p>Donation {donation} is virtue</p>
-                </div>
+            <div className="donation-greetings">
+                <DonationGreetings donation={donation} onChange={onChange}/>
+            </div>
                 <DonationButtons handleClick={handleClick}/>
                 <BigSlider donation={donation} onChange={onChange} />
                 <div className="other-amount">
