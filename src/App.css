@@ -170,10 +170,10 @@ nav li a {
 }
 
 .carousel-container {
-  background-image: url("./images/pollen.png");
-  background-position: center;
+  background-image: url("./images/backround_pollen_2.png"), url("./images/backround_pollen_1.png");
+  background-position: left top, right bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 20%, 15%;
 }
 
 .carousel-story {
