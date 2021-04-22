@@ -46,17 +46,38 @@
   color: #61dafb;
 }
 
+.storyList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .story-card {
   display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    min-height: 10vh;
-    width: 60%;
-    padding: 1rem 2rem;
-    margin: 1rem;
-    background-color: rgb(244, 246, 247);
-    color: rgba(83, 107, 120, 1);
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: left;
+  justify-content: space-around;
+  min-height: 10vh;
+  width: 60%;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  background-color: rgb(244, 246, 247);
+  color: rgba(83, 107, 120, 1);
+}
+
+.story-card img {
+  height: auto;
+  width: 20vh;
+}
+
+.story-card div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
 }
 
 .story-card:hover {
@@ -208,6 +229,10 @@ nav li a {
   .hero-text h2{
     font-size: 2.6em;
   }
+
+  .story-card {
+    width: 25%
+  } 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -228,13 +253,6 @@ nav li a {
   .hero-text h2{
     font-size: 3.4em;
   }
-}
-
-.storyList {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .carousel-container {
