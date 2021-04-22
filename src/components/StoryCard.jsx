@@ -19,7 +19,7 @@ const StoryCard = (props) => {
         </Link>
         <p>{props.story.title}</p>
       </section>
-      </Fade>
+    </Fade>
   );
 };
 

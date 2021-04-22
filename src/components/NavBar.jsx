@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from '@reach/router';
 import StyledButton from '../styledComponents/StyledButton';
+import BurgerMenu from './BurgerMenu';
 import Fade from "react-reveal/Fade";
 import logo from "../images/pollen_logo.png";
 
@@ -28,7 +29,8 @@ class NavBar extends Component {
                             })}
                         </li>
                     </ul>
-                    <StyledButton>Donate</StyledButton>
+                    <StyledButton className="donate-btn">Donate</StyledButton>
+                    <BurgerMenu></BurgerMenu>
                 </div>
             </nav>
            </Fade>
