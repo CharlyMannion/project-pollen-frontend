@@ -10,6 +10,10 @@ See our back end repository [here](https://github.com/CharlyMannion/project-poll
 
 Check out the presentation slides [here](placeholder.com)
 
+Check out our Figma design booard [here](https://www.figma.com/file/Z5a8FZLqAGaUKTD1l6zGCG/Pollen?node-id=44%3A100)
+
+Find the Project Pollen Miro Board [here](https://miro.com/app/board/o9J_ki_ZpDo=/)
+
 ## Contributors
 * [Alex Hill](https://github.com/alexxmadeleine)
 * [Edwin Simpson](https://github.com/0cedwins)
@@ -136,6 +140,14 @@ npm test
 ## User Stories
 
 ## Diagrams
+
+### Wire Frames
+
+![Screenshot 2021-04-22 at 15 16 23](https://user-images.githubusercontent.com/28218869/115729990-cc5fc500-a37d-11eb-8a2c-5d9f041b34a9.png)
+
+
+
+![Screenshot 2021-04-22 at 15 16 48](https://user-images.githubusercontent.com/28218869/115729999-ce298880-a37d-11eb-9bf6-776b2a4cf374.png)
 
 ### Component Tree Diagram
 
