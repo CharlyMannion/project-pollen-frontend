@@ -44,9 +44,9 @@ class SingleStory extends Component {
       <main className="single-page-story">
         <br/>
         <body>
-          <h2>{story_info.name}</h2>
+          <h1>{story_info.name}'s Story</h1>
           <br/>
-          <p>{story_info.story.title}</p>
+          <h2>{story_info.story.title}</h2>
         </body>
         <figure>
           <img
@@ -61,7 +61,7 @@ class SingleStory extends Component {
               return <p>{paragraph}</p>
             })} */}
           <p>{story_info.story.paragraphs[0]}</p>
-          <p><b>{story_info.story.quotes[1]}</b></p>
+          <h3><b>"{story_info.story.quotes[1]}"</b></h3>
           <p>{story_info.story.paragraphs[1]}</p>
           <p>{story_info.story.paragraphs[2]}</p>
          <section/>
