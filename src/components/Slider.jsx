@@ -12,6 +12,7 @@ function Slider() {
     function handleClick(e) {
         onChange([e.target.value]);
     }
+
     return (
         <div className="donation-selection">
             <div className="donation-card-title">
@@ -27,7 +28,7 @@ function Slider() {
                     <p> OTHER AMOUNT </p>
                 </div>
                 <div>
-                    <StyledButton style={{display: "block", margin: "auto"}}>Donate</StyledButton>
+                    <StyledButton style={{marginBottom: "25px", boxShadow: "3px 3px black"}}>Donate</StyledButton>
                 </div>
             </div>
         </div>

@@ -2,9 +2,9 @@
 import React from "react";
 import { Range, getTrackBackground } from "react-range";
 
-const STEP = 1;
+const STEP = 20;
 const MIN = 0;
-const MAX = 50;
+const MAX = 100;
 
 class BigSlider extends React.Component {
   render() {
@@ -14,12 +14,12 @@ class BigSlider extends React.Component {
           display: "flex",
           justifyContent: "center",
           flexWrap: "wrap",
-          margin: "2em",
         }}
       >
         <Range
           values={this.props.donation}
           step={STEP}
+          // step={this.props.donation * 100}
           min={MIN}
           max={MAX}
           onChange={(values) => {
@@ -35,8 +35,6 @@ class BigSlider extends React.Component {
                 height: "36px",
                 display: "flex",
                 width: "70%",
-                paddingTop: "4.5%",
-                top: "50%"
               }}
             >
               <div
@@ -63,14 +61,15 @@ class BigSlider extends React.Component {
               {...props}
               style={{
                 ...props.style,
-                height: "42px",
-                width: "42px",
+                height: "28px",
+                width: "28px",
                 borderRadius: "20px",
                 backgroundColor: "#FFF",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                boxShadow: "0px 2px 6px #AAA"
+                boxShadow: "0px 2px 6px #AAA",
+                outline: "none"
               }}
             >
               <div
