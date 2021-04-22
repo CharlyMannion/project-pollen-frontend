@@ -32,7 +32,7 @@
 }
 
 .App-footer {
-  background: #C4C4C4;  
+  background-color: #FBC108;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -265,7 +265,8 @@ nav li a {
   padding: 15px;
 }
 
-.charity-section h2 {
+.charity-section h2, 
+.artist-section h2 {
   font-size: 2.4em;
   margin-bottom: 20px;
 }
@@ -288,6 +289,26 @@ nav li a {
 
 .charity-icon {
   width: 35vw;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  color: black;
+}
+
+.footer-container ul {
+  margin-bottom: 15px;
+}
+
+.footer-container a {
+  margin: 0 8px;
+  color: black;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -332,12 +353,20 @@ nav li a {
   }
 }
 
+
+.storyList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .carousel-container {
   background-image: url("./images/backround_pollen_2.png"), url("./images/backround_pollen_1.png");
   background-position: left top, right bottom;
   background-repeat: no-repeat;
   background-size: 20%, 15%;
-  border-color: red;
+  margin: 20px auto;
 }
 
 .carousel-story {
@@ -375,7 +404,8 @@ nav li a {
     padding: 15px;
   }
   
-  .charity-section h2 {
+  .charity-section h2,
+  .artist-section h2 {
     font-size: 3.8em;
     margin-bottom: 30px;
   }
@@ -394,7 +424,6 @@ nav li a {
     margin-bottom: 65px;
   }
   
-  
   .charity-icon {
     width: 300px;
     margin: 20px;
@@ -404,12 +433,18 @@ nav li a {
     width: 40%;
   }
 
+
+  .carousel-story {
+    width: 40%;
+  }
+
   .carousel-container {
-    width: 1710px;
-    height: 911px;
-    left: 129px;
-    top: 952px;
+    width: 90vw;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .footer-container {
+    margin-top: 25px;
   }
 
 }
