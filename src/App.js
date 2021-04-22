@@ -10,7 +10,6 @@ import ContactUs from './pages/ContactUs';
 import StoryList from './pages/StoryList';
 import SingleStory from './pages/SingleStory';
 
-
 class App extends Component {
 
   render() {
@@ -25,6 +24,7 @@ class App extends Component {
           <StoryList path='/stories' />
           <SingleStory path="/story/:id" />
         </Router>
+        <Slider/>
         <Footer />
       </div>
       </Fade>
