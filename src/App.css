@@ -32,7 +32,7 @@
 }
 
 .App-footer {
-  background-color: #282c34;
+  background-color: #FBC108;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -210,7 +210,8 @@ nav li a {
   padding: 15px;
 }
 
-.charity-section h2 {
+.charity-section h2, 
+.artist-section h2 {
   font-size: 2.4em;
   margin-bottom: 20px;
 }
@@ -233,6 +234,26 @@ nav li a {
 
 .charity-icon {
   width: 35vw;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  color: black;
+}
+
+.footer-container ul {
+  margin-bottom: 15px;
+}
+
+.footer-container a {
+  margin: 0 8px;
+  color: black;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -262,6 +283,40 @@ nav li a {
   }
 }
 
+.storyList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container {
+  background-image: url("./images/backround_pollen_2.png"), url("./images/backround_pollen_1.png");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 20%, 15%;
+  margin: 20px auto;
+}
+
+.carousel-story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  left: calc(50% - 377px/2 - 36.5px);
+  top: calc(50% - 225px/2 + 206px);
+  background: #F9F9F9;
+  box-shadow: 3px 5px 1px rgba(0, 0, 0, 0.15);
+  border-color: red;
+}
+
+.carousel-story img {
+  height: 70%;
+  width: auto;
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .hero-text h2{
@@ -275,7 +330,8 @@ nav li a {
     padding: 15px;
   }
   
-  .charity-section h2 {
+  .charity-section h2,
+  .artist-section h2 {
     font-size: 3.8em;
     margin-bottom: 30px;
   }
@@ -294,16 +350,24 @@ nav li a {
     margin-bottom: 65px;
   }
   
-  
   .charity-icon {
     width: 300px;
     margin: 20px;
   }
 
+  .carousel-story {
+    width: 40%;
+  }
 
+  .carousel-container {
+    width: 90vw;
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 
-
-
+  .footer-container {
+    margin-top: 25px;
+  }
 
 }
 
@@ -372,8 +436,4 @@ nav li a {
   .quote-section .quote-container {
     padding: 125px;
   }
-
-
-
-
 }
