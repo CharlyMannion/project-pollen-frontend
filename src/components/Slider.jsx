@@ -19,7 +19,7 @@ function Slider() {
             </div>
             <div className="donation-container">
             <div className="donation-greetings">
-                <DonationGreetings donation={donation} onChange={onChange}/>
+                <DonationGreetings donation={donation}/>
             </div>
                 <DonationButtons handleClick={handleClick}/>
                 <BigSlider donation={donation} onChange={onChange} />
