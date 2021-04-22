@@ -24,9 +24,11 @@ function Slider() {
                 <DonationButtons handleClick={handleClick}/>
                 <BigSlider donation={donation} onChange={onChange} />
                 <div className="other-amount">
-                    <a href="#" > OTHER AMOUNT </a>
-                <StyledButton style={{display: "block", margin: "auto"}}>Donate</StyledButton>
-                </div>   
+                    <p> OTHER AMOUNT </p>
+                </div>
+                <div>
+                    <StyledButton style={{display: "block", margin: "auto"}}>Donate</StyledButton>
+                </div>
             </div>
         </div>
     )

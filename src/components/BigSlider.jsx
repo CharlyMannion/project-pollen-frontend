@@ -4,7 +4,7 @@ import { Range, getTrackBackground } from "react-range";
 
 const STEP = 1;
 const MIN = 0;
-const MAX = 100;
+const MAX = 50;
 
 class BigSlider extends React.Component {
   render() {
@@ -83,9 +83,6 @@ class BigSlider extends React.Component {
             </div>
           )}
         />
-        <output style={{ marginTop: "30px" }} id="output">
-          {this.props.donation[0]}
-        </output>
       </div>
     );
   }
