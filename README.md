@@ -189,12 +189,25 @@ Madhura continued working on the sliding feature within the Donation Component.
 
 Edwin built out the Charity section, the Burger Menu, and defined some break points.
 
-Charly finished working on the Carousel Component and created a ContactForm, then moved on to styling the StoryArticle, StoryCard and AboutUs components.
+Charly deployed an initial version of the app to Netlify, and then finished working on the Carousel Component and created a ContactForm, then moved on to styling the AboutUs component.
 
+### Day 4: Friday 23rd April 2021
+
+During our morning stand-up, we agreed that we would work on features until 3pm. This was to give us time to host the final version on Netlify and work on our presentation.
+
+Edwin implemented the Artist Components and a QR Scanner component.
+
+Charly re-worked the Story Page Component and added to the AboutUs component page, then redeployed the final build of the project
+
+Alex set up some analytics to track app usage, and continued working on our presentation.
+
+Madhura worked on making the Slider Component responsive. 
 
 ## Challenges
 
-* We encountered a few small isues when hosting our backend, but these were resolved fairly quickly
+* We encountered a few small isues when hosting our backend, which were tricky to de-bug
+* CSS styling took a lot longer than we anticipated
+* Picking up React as a new technology 
 
 ## Successes
 
@@ -204,3 +217,4 @@ Charly finished working on the Carousel Component and created a ContactForm, the
 ## What we would do differently next time
 
 * We would write unit tests for the backend up front
+* We would have pre-agreed on CSS styling before embarking on the project
