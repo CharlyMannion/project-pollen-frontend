@@ -6,12 +6,14 @@ import QuoteSection from '../components/QuoteSection';
 import ArtistSection from '../components/ArtistSection';
 import CharitySection from '../components/CharitySection';
 import Slider from "../components/Slider";
+import QrSection from "../components/QrSection";
 
 
 class Landing extends Component {
     render() {
         return (
           <Fade>
+              <QrSection />
               <HeroSection />
               <StoryCarousel />
               <QuoteSection />
