@@ -1,7 +1,5 @@
 # Project Pollen Frontend
 
-test
-
 This is the frontend of our App for project pollen, built using React
 
 View the website [here](https://projectpollen.netlify.app/)
