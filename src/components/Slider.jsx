@@ -5,7 +5,6 @@ import DonationButtons from "./DonationButtons";
 import DonationGreetings from "./DonationGreetings";
 import StyledButton from '../styledComponents/StyledButton';
 
-
 function Slider() {
     const [donation, onChange] = useState([0]);
 
