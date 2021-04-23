@@ -865,6 +865,7 @@ button[type=submit] {
   font-size: 25px;
   font-weight: bolder;
   color: white;
+  text-align: center;
 }
 
 .donation-buttons button:focus {
