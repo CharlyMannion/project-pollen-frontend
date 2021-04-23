@@ -362,6 +362,7 @@ nav li a {
   flex-direction: column;
   align-items: center;
   padding: 15px;
+  margin-bottom: 40px;
 }
 
 .charity-section h2, 
@@ -372,7 +373,8 @@ nav li a {
 
 .charity-container {
   position: relative;
-  width: 90vw;
+  /* width: 90vw; */
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -482,6 +484,10 @@ nav li a {
   margin: 0 auto;
 }
 
+nav {
+  z-index: 1000;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   
@@ -589,8 +595,8 @@ nav li a {
   .hero-text h2{
     font-size: 3.8em;
   }
-  
-  .burger-menu {
+
+  .bm-burger-button{
     display: none;
   }
 
@@ -706,6 +712,7 @@ nav li a {
 
   .quote-section {
     display: flex;
+
   }
 
   .quote-section img {
@@ -871,4 +878,74 @@ button[type=submit]:hover {
   width: 86%;
   padding-left: 7%;
   justify-content: center;
+}
+
+
+
+
+/* css menu styles */
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: black;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  /* z-index: 1000; */
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #FBC108;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  margin-left: -25px;
+}
+
+
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: black;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }

@@ -5,7 +5,7 @@ const Footer = () => {
    
     return (
         <footer className="App-footer">
-            <div className="footer-container flex">
+            <div className="footer-container flex" style={{ marginBottom: '30px'}}>
                 <div className="logo-container">
                     <img src={logo} alt="company logo" className="logo"></img>
                     <h1 className="logo-text">Pollen</h1>
