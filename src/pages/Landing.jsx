@@ -13,7 +13,6 @@ class Landing extends Component {
     render() {
         return (
           <Fade>
-              <QrSection />
               <HeroSection />
               <StoryCarousel />
               <QuoteSection />
