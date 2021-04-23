@@ -1,16 +1,25 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function DonationButtons({handleClick}) {
-    
-    return (
-        <div className= "donation-buttons">
-            <button value ="1" onClick={handleClick}>£1</button>
-            <button value="5" onClick={handleClick}>£5</button>
-            <button value="10" onClick={handleClick}>£10</button>
-            <button value="20" onClick={handleClick}>£20</button>
-            <button value="50" onClick={handleClick}>£50</button>
-        </div>
-    )
+export class DonationButtons extends Component {
+
+    render() {
+        const donationItems = [{tag: 1, value:3.4}, {tag: 5, value:14.3}, {tag: 10, value:25}, {tag: 20, value:35.9}, {tag: 50, value:46.7}];
+
+        const items = []
+
+        for (const [index, donationItem] of donationItems.entries()) {
+            items.push(<button value ={donationItem.value}
+                               className={this.props.donation == donationItem.value? "donation-button-highlighted": "donation-button"} 
+                               onClick={this.props.handleClick}> 
+                               £{donationItem.tag}
+                               </button>)
+        }
+        return (
+            <div className= "donation-buttons">
+                {items}
+            </div>
+        )
+    }
 }
 
 export default DonationButtons
