@@ -4,19 +4,19 @@ function DonationGreetings({donation}) {
     let donationAmount = parseFloat(donation[0]);
 
     console.log("donations is ",donationAmount);
-    if(donationAmount < 3.4) {
+    if(donationAmount < 2.4) {
         return <p>Donation is virtue</p>;
     }
-    else if(donationAmount >= 3.4 && donationAmount < 14.3) {
+    else if(donationAmount >= 2.4 && donationAmount < 13.7) {
         return <p>By donating £1, you can provide 2 hot drinks</p>;
     }
-    else if(donationAmount >= 14.3 && donationAmount < 25) {
+    else if(donationAmount >= 13.7 && donationAmount < 24.9) {
         return <p>By donating £5, you can provide a hot drink and a meal</p>;
     }
-    else if(donationAmount >= 25 && donationAmount < 35.9) {
+    else if(donationAmount >= 24.9 && donationAmount < 36.3) {
         return <p>By donating £10, you can provide a first aid kit</p>;
     }
-    else if(donationAmount >= 35.9 && donationAmount < 46.7) {
+    else if(donationAmount >= 36.3 && donationAmount < 47.6) {
         return <p>By donating £20, you can provide faminine hygine products, razors and baby wipes</p>;
     }
     else {
