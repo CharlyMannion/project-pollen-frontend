@@ -819,11 +819,6 @@ button[type=submit] {
   margin-bottom: 24px;
 }
 
-.donation-buttons {
-  display: flex;
-  justify-content: space-around;
-}
-
 .donation-buttons button{
   margin-bottom: 20px;
 }
