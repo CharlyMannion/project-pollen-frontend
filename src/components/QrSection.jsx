@@ -7,7 +7,7 @@ const QrSection = () => {
     return (
         <section className="qr-section">
             <div className="qr-container">
-                <QrReader facingMode="environment" style={{width: '300px', height: '300px'}}/>
+                <QrReader facingMode="front" style={{width: '300px', height: '300px'}}/>
             </div>
         </section>
     );
