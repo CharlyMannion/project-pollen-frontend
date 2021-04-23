@@ -160,13 +160,13 @@ npm test
 
 ![Screenshot 2021-04-22 at 15 16 48](https://user-images.githubusercontent.com/28218869/115729999-ce298880-a37d-11eb-9bf6-776b2a4cf374.png)
 
-### Component Tree Diagram
-
-![Screenshot 2021-04-20 at 13 19 50](https://user-images.githubusercontent.com/28218869/115394837-1fe5dd80-a1db-11eb-99c5-71cabfb8fa0b.png)
-
 ### App Snippets
 
 ![Screenshot 2021-04-23 at 14 55 21](https://user-images.githubusercontent.com/28218869/115881832-0eebd500-a444-11eb-99fc-2c7815632eac.png)
+
+### Component Tree Diagram
+
+![Screenshot 2021-04-20 at 13 19 50](https://user-images.githubusercontent.com/28218869/115394837-1fe5dd80-a1db-11eb-99c5-71cabfb8fa0b.png)
 
 
 ## Our Story
