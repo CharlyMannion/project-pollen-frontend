@@ -547,7 +547,7 @@ input[type=text], select, textarea {
 
 button[type=submit] {
   color: white;
-    background-color: #1582D1;
+  background-color: #1582D1;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -562,9 +562,12 @@ button[type=submit] {
 
 .donation-selection {
   background-color: #FBC108;
+  background-image: url("./images/backround_pollen_2.png"), url("./images/backround_pollen_1.png");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 16%, 15%;
   display: flex;
   flex-direction: column;
-  align-items: left;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -586,7 +589,7 @@ button[type=submit] {
   font-size: calc(10px + 2vmin);
   color: white;
   text-align: center;
-  box-shadow: 4px 4px 4px 3px rgb(134, 134, 134);
+  box-shadow: 4px 4px 4px 3px rgb(39, 39, 39);
 }
 
 .donation-greetings p{
