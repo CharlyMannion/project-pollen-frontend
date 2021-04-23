@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class DonationButtons extends Component {
 
     render() {
-        const donationItems = [{tag: 1, value:3.4}, {tag: 5, value:14.3}, {tag: 10, value:25}, {tag: 20, value:35.9}, {tag: 50, value:46.7}];
+        const donationItems = [{tag: 1, value:3.8}, {tag: 5, value:14.4}, {tag: 10, value:24.9}, {tag: 20, value:35.6}, {tag: 50, value:46.2}];
 
         const items = []
 

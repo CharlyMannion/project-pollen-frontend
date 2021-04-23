@@ -639,7 +639,7 @@ button[type=submit] {
   margin: 4%;
   margin-bottom: 1%;
   position: relative;
-  width: 5%;
+  width: 70px;
   height: 60px;
   border-radius: 10px;
   font-size: 25px;
