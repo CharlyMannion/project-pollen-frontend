@@ -571,6 +571,7 @@ button[type=submit] {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  align-items: center;
 }
 
 .slider-parent {
@@ -581,6 +582,7 @@ button[type=submit] {
 
 .donation-container {
   background-color: #2c3f49;
+  min-width: 70vw;
   padding: 2%;
   border-radius: 2em;
   margin: 120px;
