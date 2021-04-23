@@ -203,6 +203,14 @@ Alex set up some analytics to track app usage, and continued working on our pres
 
 Madhura worked on making the Slider Component responsive. 
 
+### Day 5: Monday 26th April 2021
+
+Today was our final day of build week! In the morning, we practiced our presentation and fine-tuned the last few things in our project.
+
+At 11am, we presented our build week project to ANDi's from the clubs we will be joining (Murray, Sparck and Jemison).
+
+After lunch, we had our Sprint Retro. Then we finished the day with a celebration for all our hard work, and to bring our ANDuction to a close.
+
 ## Challenges
 
 * We encountered a few small isues when hosting our backend, which were tricky to de-bug
