@@ -4,6 +4,7 @@ import Loader from "../components/Loader";
 import ErrorDisplay from "../components/ErrorDisplay";
 import Fade from "react-reveal/Fade";
 import CharitySection from '../components/CharitySection';
+import Slider from '../components/Slider';
 
 class SingleStory extends Component {
   state = {
@@ -61,6 +62,7 @@ class SingleStory extends Component {
           <p2>Manchester Homeless Charity needs your help. To help others like {story_info.name} facing homelessness, donate today. As little as £5 will provide a meal and a bed to someone in need.</p2><br/>
         </div>
       </main>
+      <Slider />
       <CharitySection />
       </Fade>
     );
