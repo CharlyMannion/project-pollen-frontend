@@ -578,15 +578,16 @@ button[type=submit] {
 
 .donation-container {
   background-color: #2c3f49;
+  padding: 2%;
   border-radius: 2em;
-  margin: 80px;
   padding: 35px;
+  margin: 120px;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
   text-align: center;
-  box-shadow: 4px 2px black;
+  box-shadow: 4px 4px 4px 3px rgb(134, 134, 134);
 }
 
 .donation-greetings p{
@@ -607,21 +608,13 @@ button[type=submit] {
 
 .donation-buttons button{
   margin-bottom: 20px;
+}
+
+.donation-button {
   background-color: #878787;
-  position: relative;
-  width: 80px;
-  height: 60px;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 600;
-  color: white;
 }
 
-.donation-buttons button:focus {
-  outline: none;
-}
-
-.donation-buttons button:after {
+.donation-button:after {
   content: '';
   position: absolute;
   width: 20px;
@@ -630,10 +623,47 @@ button[type=submit] {
   background-color: #878787;
   transform: rotate(45deg);
   top: 45px;
-  right: 28px;
+  right: 24px;
+}
+
+.donation-button-highlighted {
+  background-color: #FBC108;
+}
+
+.donation-button-highlighted:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+  background-color: #FBC108;
+  transform: rotate(45deg);
+  top: 45px;
+  right: 24px;
+}
+
+.donation-buttons button{
+  margin: 4%;
+  margin-bottom: 1%;
+  position: relative;
+  width: 5%;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+}
+
+.donation-buttons button:focus {
+  outline: none;
 }
 
 button[type=submit]:hover {
   background-color: #1582D1;
 }
 
+.donation-slider {
+  width: 86%;
+  padding-left: 7%;
+  justify-content: center;
+}

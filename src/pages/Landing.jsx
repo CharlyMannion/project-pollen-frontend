@@ -5,8 +5,7 @@ import StoryCarousel from '../components/StoryCarousel';
 import QuoteSection from '../components/QuoteSection';
 import ArtistSection from '../components/ArtistSection';
 import CharitySection from '../components/CharitySection';
-import BigSlider from '../components/BigSlider';
-import Slider from '../components/Slider';
+import Slider from "../components/Slider";
 
 
 class Landing extends Component {
@@ -16,7 +15,7 @@ class Landing extends Component {
               <HeroSection />
               <StoryCarousel />
               <QuoteSection />
-              <Slider />
+              <Slider/>
               <ArtistSection />
               <CharitySection />
           </Fade>
